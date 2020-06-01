@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+<section class="contactFormWrapper">
+    <form class="contactForm" action="#" method="post">
+        <h1 class="formName">contact form</h1>
+        <p class="formDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, facilis.</p>
+
+        <section class="userName userFormSection">
+            <div class="text">
+                <label for="name">
+                    your name
+                </label>
+            </div>
+            <div class="input">
+                <input id="name"
+                       type="text"
+                       placeholder="first name"
+                       pattern="[A-Za-z]{3-20}"
+                       required>
+                <input type="text"
+                       placeholder="last name"
+                       pattern="[A-Za-z]{3-20}"
+                       required>
+            </div>
+        </section>
+        <section class="userEmail userFormSection">
+            <div class="text">
+                <label for="email">your email</label>
+            </div>
+            <div class="input">
+                <input id="email"
+                       type="email"
+                       placeholder="your_mail@mail.com"
+                       pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                       required>
+            </div>
+        </section>
+        <section class="userPhone userFormSection">
+            <div class="text">
+                <label for="phone">phone *</label>
+            </div>
+            <div class="input">
+                <input id="phone"
+                       type="tel"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                       placeholder="000">
+                <input type="tel"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                       placeholder="000">
+                <input type="tel"
+                       pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                       placeholder="0000">
+            </div>
+        </section>
+        <section class="userSubject userFormSection">
+            <div class="text">
+                <label for="subject">message subject *</label>
+            </div>
+            <div class="input">
+                <select id="subject">
+                    <option value="option1">Option1</option>
+                    <option value="option2">Option2</option>
+                    <option value="option3">Option3</option>
+                    <option value="option4">Option4</option>
+                    <option value="option5">Option5</option>
+                    <option value="other" selected>Other</option>
+                </select>
+            </div>
+        </section>
+        <section class="userMessage userFormSection">
+            <div class="text">
+                <label for="message">message *</label>
+            </div>
+            <div class="input">
+                <textarea id="message" cols="30" rows="10"></textarea>
+            </div>
+        </section>
+
+        <hr class="line">
+        <button class="submitButton input" type="submit">submit form</button>
+    </form>
+</section>
+</body>
+</html>
